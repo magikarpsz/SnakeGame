@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.testgames.snakegame.GameScreen
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/playField"
+        ></com.testgames.snakegame.GameScreen>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/startButton"
+        android:id="@+id/startButton"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textAppearance="@style/bold"
+        android:onClick="start" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/credit"
+        android:id="@+id/creditButton"
+        android:layout_below="@+id/startButton"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/bold"
+        android:onClick="credit"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SNAKE GAME"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_above="@+id/startButton"
+        android:layout_marginBottom="100dp"
+        android:id="@+id/title" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pauseButton"
+        android:id="@+id/pauseButton"
+        android:layout_alignParentRight="true"
+        android:onClick="pause"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score"
+        android:id="@+id/score"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_above="@+id/startButton"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Up"
+        android:id="@+id/up"
+        android:layout_above="@+id/down"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:onClick="up"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Down"
+        android:id="@+id/down"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:onClick="down"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Left"
+        android:id="@+id/left"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/up"
+        android:layout_toStartOf="@+id/up"
+        android:layout_marginBottom="25dp"
+        android:textAllCaps="false"
+        android:onClick="left"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Right"
+        android:id="@+id/right"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/up"
+        android:layout_marginBottom="25dp"
+        android:textAllCaps="false"
+        android:onClick="right"/>
+</RelativeLayout>
