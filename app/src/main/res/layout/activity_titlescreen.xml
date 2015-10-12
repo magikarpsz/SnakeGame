@@ -67,8 +67,7 @@
         android:id="@+id/up"
         android:layout_above="@+id/down"
         android:layout_centerHorizontal="true"
-        android:textAllCaps="false"
-        android:onClick="up"/>
+        android:textAllCaps="false" />
 
     <Button
         android:layout_width="wrap_content"
@@ -77,8 +76,7 @@
         android:id="@+id/down"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:textAllCaps="false"
-        android:onClick="down"/>
+        android:textAllCaps="false" />
 
     <Button
         android:layout_width="wrap_content"
@@ -89,8 +87,7 @@
         android:layout_toLeftOf="@+id/up"
         android:layout_toStartOf="@+id/up"
         android:layout_marginBottom="25dp"
-        android:textAllCaps="false"
-        android:onClick="left"/>
+        android:textAllCaps="false" />
 
     <Button
         android:layout_width="wrap_content"
@@ -100,6 +97,5 @@
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/up"
         android:layout_marginBottom="25dp"
-        android:textAllCaps="false"
-        android:onClick="right"/>
+        android:textAllCaps="false" />
 </RelativeLayout>

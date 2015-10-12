@@ -1,12 +1,11 @@
 package com.testgames.snakegame;
 
+import android.content.Context;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
+import android.view.View;
 
-/**
- * Created by Bin on 10/9/2015.
- */
-public class GestureListener extends GestureDetector.SimpleOnGestureListener {
+public class SwipeListener extends GestureDetector.SimpleOnGestureListener{
 
     private static final int SWIPE_THRESHOLD = 100;
     private static final int SWIPE_VELOCITY_THRESHOLD = 100;
@@ -48,18 +47,24 @@ public class GestureListener extends GestureDetector.SimpleOnGestureListener {
     }
 
     public void onSwipeRight() {
-
+        GameEngine.setDirection(1);
     }
 
     public void onSwipeLeft() {
-
+        GameEngine.setDirection(3);
     }
 
     public void onSwipeTop() {
-
+        GameEngine.setDirection(0);
     }
 
     public void onSwipeBottom() {
-
+        GameEngine.setDirection(2);
     }
 }
+
+
+
+
+
+
